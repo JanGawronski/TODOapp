@@ -1,0 +1,14 @@
+{
+    "name": "todoapp",
+    "workspaces": [
+        "frontend",
+        "backend"
+      ],
+    "scripts": {
+      "dev": "concurrently \"cd backend && npx ts-node index.ts\" \"cd frontend && npm run dev\"",
+      "todoapp_db": "cd backend && docker-compose up"
+    },
+    "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+  }

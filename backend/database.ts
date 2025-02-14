@@ -61,11 +61,11 @@ export class Task {
 }
 
 export const AppDataSource = new DataSource({
-  type: "mysql",
+  type: "mariadb",
   host: "localhost",
   port: 3306,
-  username: "admin",
-  password: "admin",
-  database: "todo",
+  username: "todoappuser",
+  password: "todoapppassword",
+  database: "todoapp",
   entities: [User, List, Task],
 });

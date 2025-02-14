@@ -1,24 +1,20 @@
-# todobackend
-Do projektu użyłem Typescript, Express.js, TypeORM, bazy MariaDB, REST API, class-validator oraz Swaggera.
+# todo app
+Simple todo app made with Typescript, Next.js, Tailwind CSS, Express.js, TypeORM, MariaDB, REST API, class-validator and Swagger.
 
-## How to install
+## How to setup
 
-Zakładam, że Node.js oraz serwer bazy danych MySQL już jest zainstalowany.
+Node.js and Docker are required.
 
-Domyślne parametry bazy danych to: 
-- nazwa: todo,
-- użytkownik: admin,
-- hasło: admin.
-
-Można je zmienić w pliku database.ts.
-
-W pliku setup.sql są komendy do przygotowania tabel bazy danych, a w pliku exampledata.sql komendy, że wypełnić bazę przykładowymi danymi.
-
-Żeby zainstalować wystarczy w folderze projektu uruchomić komendę:
+To setup the project you need to run the following command in root directory:
 
 `npm install`
 
-Żeby potem uruchomić trzeba wpisać:
+## How to run:
 
-`npx ts-node index.ts`
+Run the following commands in root directory:
 
+`npm run todoapp_db`
+
+and:
+
+`npm run dev`
